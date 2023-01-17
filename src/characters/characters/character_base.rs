@@ -2,13 +2,13 @@ use std::ptr::hash;
 
 pub struct CharacterBase {
     pub(crate) hp: u32,
-    //moves: [Moves; 5],
+    pub(crate) moves: Vec<Moves>,
     pub(crate) name: String,
 }
 
 pub struct Moves {
-    damage: u32,
-    name: String,
+    pub(crate) damage : u32,
+    pub(crate) name: String,
 }
 
 impl CharacterBase {
